@@ -585,6 +585,11 @@ body{
         align-items: center;
         margin-bottom: 80px;
 
+        &__items{
+            display: flex;
+            align-items: center;
+        }
+
         &-button{
             background-color: #fff;
             width: 48px;
@@ -680,6 +685,13 @@ body{
                 display: flex;
                 align-items: center;
             }
+
+            &-bottom{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+            }
         }
 
         &-tours{        
@@ -714,8 +726,12 @@ body{
             }
 
             &__card{
-                padding: 0 20px 28px 0;
+                padding: 0 20px 28px 21px;
             }
+        }
+
+        &-tickets__item + &-tickets__item{
+            margin-left: 200px;
         }
     }
 }

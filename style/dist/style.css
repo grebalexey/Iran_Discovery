@@ -493,6 +493,10 @@ body {
   align-items: center;
   margin-bottom: 80px;
 }
+.main-section__items {
+  display: flex;
+  align-items: center;
+}
 .main-section-button {
   background-color: #fff;
   width: 48px;
@@ -578,6 +582,12 @@ body {
   display: flex;
   align-items: center;
 }
+.main-section__card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
 .main-section-tours__cards {
   display: flex;
   flex-direction: column;
@@ -602,7 +612,10 @@ body {
   height: 416px;
 }
 .main-section-hotels__card {
-  padding: 0 20px 28px 0;
+  padding: 0 20px 28px 21px;
+}
+.main-section-tickets__item + .main-section-tickets__item {
+  margin-left: 200px;
 }
 
 .footer {
