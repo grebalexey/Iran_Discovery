@@ -609,6 +609,10 @@ body{
             &__right{
                 right: -25px;
             }
+
+            &-articles{
+                top: 130px;
+            }
         }
 
         &__title{
@@ -648,6 +652,12 @@ body{
             &-wrap-medium{
                 height: 100%;
                 width: 33.3%;
+                padding-left: 20px;
+            }
+
+            &-wrap-small{
+                height: 100%;
+                width: 25%;
                 padding-left: 20px;
             }
 
@@ -730,9 +740,98 @@ body{
             }
         }
 
+        &-events{
+            &__cards{
+                height: 416px;
+            }
+
+            &__card{
+                padding: 0 20px 28px 21px;
+            }
+            
+        }
+
         &-tickets__item + &-tickets__item{
             margin-left: 200px;
         }
+
+        &-articles{
+
+            &__card{
+                border-radius: 10px;
+                border: 1px solid #CEE5FF;
+                overflow: hidden;
+
+                &-cover{
+                    height: 297px;
+                    background-color: #C2C2C2;
+                }
+
+                &-content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    padding: 0 20px 24px 44px;
+                }
+
+                &-title{
+                    color: #0587D6;
+                    text-align: right;
+                }
+
+                &-desc{
+                    text-align: right;
+                }
+            }
+        }
+
+        &-regions{
+
+            &__cards{
+                height: 182px;
+            }
+
+            &__card{
+
+                padding: 20px;
+
+                &-title{
+                    font-size: 24px;
+                    font-weight: 700;
+                    line-height: 28.8px;
+                }
+            }
+        }
+    }
+}
+
+.form{
+    border-radius: 10px;
+    background-color: #EFF7FF;
+    // background: linear-gradient(#DDEEFF 0%, #00A2E5 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__title{
+        color: #0587D6;
+    }
+
+    &__subtitle{
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 51.2px;
+        letter-spacing: 0;
+    }
+
+    &__left{
+
+    }
+
+    &__right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 }
 

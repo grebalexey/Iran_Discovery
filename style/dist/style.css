@@ -515,6 +515,9 @@ body {
 .main-section-button__right {
   right: -25px;
 }
+.main-section-button-articles {
+  top: 130px;
+}
 .main-section__title {
   color: #0587D6;
   margin-bottom: 40px;
@@ -549,6 +552,11 @@ body {
 .main-section__card-wrap-medium {
   height: 100%;
   width: 33.3%;
+  padding-left: 20px;
+}
+.main-section__card-wrap-small {
+  height: 100%;
+  width: 25%;
   padding-left: 20px;
 }
 .main-section__card-region {
@@ -614,8 +622,69 @@ body {
 .main-section-hotels__card {
   padding: 0 20px 28px 21px;
 }
+.main-section-events__cards {
+  height: 416px;
+}
+.main-section-events__card {
+  padding: 0 20px 28px 21px;
+}
 .main-section-tickets__item + .main-section-tickets__item {
   margin-left: 200px;
+}
+.main-section-articles__card {
+  border-radius: 10px;
+  border: 1px solid #CEE5FF;
+  overflow: hidden;
+}
+.main-section-articles__card-cover {
+  height: 297px;
+  background-color: #C2C2C2;
+}
+.main-section-articles__card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 0 20px 24px 44px;
+}
+.main-section-articles__card-title {
+  color: #0587D6;
+  text-align: right;
+}
+.main-section-articles__card-desc {
+  text-align: right;
+}
+.main-section-regions__cards {
+  height: 182px;
+}
+.main-section-regions__card {
+  padding: 20px;
+}
+.main-section-regions__card-title {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+}
+
+.form {
+  border-radius: 10px;
+  background-color: #EFF7FF;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form__title {
+  color: #0587D6;
+}
+.form__subtitle {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 51.2px;
+  letter-spacing: 0;
+}
+.form__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .footer {
