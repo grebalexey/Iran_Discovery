@@ -528,9 +528,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
   margin-left: -20px;
   position: relative;
+}
+.main-section__cards-wrap {
+  width: 100%;
 }
 .main-section__card {
   background: linear-gradient(180deg, rgba(131, 128, 128, 0.2) 0%, rgba(0, 0, 0, 0.7) 100%);
@@ -599,7 +601,6 @@ body {
 .main-section-tours__cards {
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 .main-section-tours__cards-top {
   height: 440px;
@@ -612,11 +613,6 @@ body {
   padding: 23px 40px;
 }
 .main-section-hotels__cards {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
   height: 416px;
 }
 .main-section-hotels__card {
@@ -664,6 +660,16 @@ body {
   font-weight: 700;
   line-height: 28.8px;
 }
+.main-section-partners__card {
+  border: 1px solid #DCDBDB;
+  border-radius: 10px;
+  height: 110px;
+  margin-left: 20px;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 .form {
   border-radius: 10px;
@@ -671,9 +677,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 80px;
+  padding: 32px 0;
 }
 .form__title {
   color: #0587D6;
+  font-size: 48px;
+  line-height: 140%;
+  margin: 0;
 }
 .form__subtitle {
   font-weight: 400;
@@ -681,10 +692,101 @@ body {
   line-height: 51.2px;
   letter-spacing: 0;
 }
-.form__right {
+.form__item {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  font-size: 20px;
+  font-weight: 600;
+  width: 100%;
+}
+.form__item input {
+  margin-top: 8px;
+  border-radius: 10px;
+  border: 1px solid #CEE5FF;
+  padding: 15px 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.form__item input::placeholder {
+  color: #C2C2C2;
+  font-size: 16px;
+}
+.form__item textarea {
+  margin-top: 8px;
+  border-radius: 10px;
+  border: 1px solid #CEE5FF;
+  padding: 15px 20px;
+  width: 100%;
+  direction: rtl;
+  box-sizing: border-box;
+}
+.form__item textarea::placeholder {
+  color: #C2C2C2;
+  font-size: 16px;
+}
+.form__item + .form__item {
+  margin-top: 24px;
+}
+.form .name {
+  direction: rtl;
+}
+.form .name::placeholder {
+  text-align: right;
+}
+.form .question::placeholder {
+  text-align: right;
+}
+.form__checkbox {
+  margin: 24px 0;
+  text-align: right;
+  display: flex;
+  align-items: center;
+}
+.form__checkbox::after {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #CEE5FF;
+  border-radius: 4px;
+  margin-left: 12px;
+  background: #fff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.form__custom-checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.form__left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.form__right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 80px;
+  padding-left: 116px;
+  box-sizing: border-box;
+}
+.form-button {
+  background-color: #FF6A00;
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 600;
+  width: 100%;
+  line-height: 160%;
+  padding: 9px 0;
+  border-radius: 10px;
 }
 
 .footer {
