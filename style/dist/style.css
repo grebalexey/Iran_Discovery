@@ -763,11 +763,17 @@ body {
   z-index: -1;
   opacity: 0;
 }
+.form__custom-checkbox:checked + label::after {
+  border-color: #FF6A00;
+  background-color: #FF6A00;
+  background-image: url("../../images/checked.png");
+}
 .form__left {
   width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  background-image: url(../../images/russia.png);
 }
 .form__right {
   width: 50%;
