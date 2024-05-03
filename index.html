@@ -485,23 +485,31 @@
                 <div class="form__left">
                     <h1 class="form__title">به ما درخواست بفرستید</h1>
                     <div class="form__subtitle">ما با شما تماس میگیریم </div>
+                    <div class="form__background">
+                        <img src="images/russia.png" alt="">
+                    </div>
+                    <div class="form__image">
+                        <img src="images/girl.png" alt="">
+                    </div>
+                    
                 </div>
                 <div class="form__right">
-                    <label for="name" class="form__item">
-                        نام و نام خانوادگی
-                        <input type="text" id="name" class="name" placeholder="یوسف اجیروف">
+                    <label for="name" class="form__item form__name-label">
+                        <span>نام و نام خانوادگی</span>
+                        <input type="text" id="name" class="form__name" placeholder="یوسف اجیروف">
                     </label>
-                    <label for="phone" class="form__item">
-                        شماره تماس 
-                        <input type="tel" id="phone" class="phone" placeholder="+98">
+                    <label for="phone" class="form__item form__phone-label">
+                        <span>شماره تماس</span>
+                        <input type="tel" id="phone" class="form__phone" placeholder="+98">
                     </label>
-                    <label for="question" class="form__item">
-                        درخواست                        
-                        <textarea class="question" placeholder="ترجیحات و خواسته های شما"></textarea>
+                    <label for="question" class="form__item form__question-label">
+                        <span>درخواست</span>                   
+                        <textarea class="form__question" placeholder="ترجیحات و خواسته های شما"></textarea>
                     </label>
                     <input class="form__custom-checkbox" type="checkbox" id="checkbox" placeholder="ترجیحات و خواسته های شما">
                     <label for="checkbox" class="form__checkbox">
-                         من با پردازش داده های شخصی مطابق با شرایط سیاست حفظ حریم خصوصی موافقم   
+                        <span>من با پردازش داده های شخصی مطابق با شرایط سیاست حفظ حریم خصوصی موافقم</span>
+                        <!-- <span>خصوصی موافقم <a href="#">سیاست حفظ حریم</a>من با پردازش داده های شخصی مطابق با شرایط</span> -->
                     </label>                    
                     <button class="button form-button">
                         ارسال درخواست

@@ -167,6 +167,7 @@ html {
   button,
   input { /* 1 */
     overflow: visible;
+    cursor: pointer;
   }
   
   /**
@@ -826,12 +827,13 @@ body{
 .form{
     border-radius: 10px;
     background-color: #EFF7FF;
-    // background: linear-gradient(#DDEEFF 0%, #00A2E5 100%);
     display: flex;
-    align-items: center;
     justify-content: space-between;
     margin-bottom: 80px;
-    padding: 32px 0;
+    position: relative;
+    border: 1px solid #CEE5FF;
+    background-image: url(../../images/blur.png);
+    background-repeat: no-repeat;
 
     &__title{
         color: #0587D6;
@@ -877,6 +879,7 @@ body{
             width: 100%;
             direction: rtl;
             box-sizing: border-box;
+            resize: none;
 
             &::placeholder{
                 color: #C2C2C2;
@@ -889,14 +892,30 @@ body{
         }
     }
 
-    .name{
+    &__name{
         direction: rtl;
         &::placeholder{
             text-align: right;
         }
+
+        &-label{
+            span::before{
+                content: '*';
+                color: #FF6A00;
+            }
+        }
     }
 
-    .question{
+    &__phone{
+        &-label{
+            span::before{
+                content: '*';
+                color: #FF6A00;
+            } 
+        }
+    }
+
+    &__question{
         &::placeholder{
             text-align: right;
         }
@@ -907,6 +926,7 @@ body{
         text-align: right;
         display: flex;
         align-items: center;
+        width: 80%;
         
         &::after{
             content: '';
@@ -939,13 +959,37 @@ body{
         }
     }
 
+    &__background{
+        width: 100%;
+        // background: linear-gradient(-171deg, #DDEEFF 0%, #00A2E5 100%);
+
+        img{
+            width: 100%;
+        }
+    }
+
+    &__image{
+        // background-image: url(../../images/russia.png);
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        position: absolute;
+        bottom: 0;
+        left: 100px;
+
+        // &::after{
+        //     background: linear-gradient(-171deg, #DDEEFF 0%, #00A2E5 100%);
+        // }
+    }
+
     &__left{
         width: 50%;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        background-image: url(../../images/russia.png);
-
+        // background: linear-gradient(#DDEEFF 0%, #00A2E5 100%);
+        // background: linear-gradient(180deg, #DDEEFF 0%, #00A2E5 350%);
+        // background-image: url('../../images/blur.png');
+        padding: 32px 0 0 0;
     }
 
     &__right{
@@ -953,8 +997,7 @@ body{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        padding-right: 80px;
-        padding-left: 116px;
+        padding: 32px 80px 32px 116px;
         box-sizing: border-box;
     }
 
