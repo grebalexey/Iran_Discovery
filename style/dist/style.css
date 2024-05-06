@@ -839,6 +839,9 @@ body {
   border-radius: 10px;
 }
 
+.tour-container {
+  display: flex;
+}
 .tour-section-include {
   display: flex;
   align-items: center;
@@ -963,6 +966,12 @@ body {
 }
 .tour-schedule__item + .tour-schedule__item {
   margin-top: 24px;
+}
+
+.aside {
+  padding: 30px;
+  min-width: 412px;
+  margin-right: 130px;
 }
 
 .footer {

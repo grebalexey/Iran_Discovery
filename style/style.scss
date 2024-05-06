@@ -1037,6 +1037,14 @@ body{
 // TOUR DETAIL
 
 .tour{
+    &-container{
+        display: flex;
+    }
+
+    &-content{
+
+    }
+
     &-section{
         &-include{
             display: flex;
@@ -1204,6 +1212,12 @@ body{
             }
         }
     }
+}
+
+.aside{
+    padding: 30px;
+    min-width: 412px; //УБРАТЬ
+    margin-right: 130px;
 }
 
 .footer{
