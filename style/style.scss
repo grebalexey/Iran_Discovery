@@ -1396,6 +1396,10 @@ body{
         }
     }
 
+    &-cards{
+        width: 100%;
+    }
+
     &-card{
         display: flex;
         align-items: center;
@@ -1404,6 +1408,7 @@ body{
         border: 1px solid #E7F2FF;
         overflow: hidden;
         cursor: pointer;
+        margin-left: 20px;
 
         & + &{
             margin-top: 32px;
@@ -1413,6 +1418,7 @@ body{
             // display: flex;
             // flex-direction: column;
             // align-items: flex-end;
+            width: 100%;
         }
 
         &__title{
@@ -1454,7 +1460,8 @@ body{
             justify-content: space-between;
             padding: 12px 24px;
             background-color: #E7F2FF;
-            width: 100%;
+            margin-top: 10px;
+            // width: 100%;
         }
 
         &__price{
@@ -1693,6 +1700,100 @@ body{
     max-width: 412px;
     position: absolute;
     top: -175px;
+
+    &-filters{
+        padding: 30px 16px;
+        border: 2px solid #CEE5FF;
+        border-radius: 10px;
+        margin: 40px 0;
+    }
+
+    &-filter{
+        
+
+        &__title{
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        &__line{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &-range{
+                display: flex;
+                flex-direction: column;
+                
+                &-value{
+                    display: flex;
+                    align-items: center;
+                    padding: 8px 0;
+                }
+
+                &-slider{
+                    height: 7px;
+                    width: 100%;
+                    border-radius: 10px;
+                    background-color: #d3d3d3;
+                    position: relative;
+
+                    &-progress{
+                        height: 7px;
+                        width: 100%;
+                        border-radius: 10px;
+                        background-color: #0587D6;
+                        position: absolute;
+                        left: 25%;
+                        right: 25%;
+                    }
+
+                    &-input{
+                        position: relative;
+                        width: 100%;
+
+                        input{
+                            direction: rtl;
+                            width: 100%;
+                            // position: absolute;
+                            // // top: -5px;
+                            // height: 7px;
+                            // width: 100%;
+                            // background: none;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        &__box{
+            display: flex;
+            align-items: center;
+            border: 1px solid #C2C2C2;
+            border-radius: 7px;
+            padding: 3px 10px;
+
+                & + &{
+                    margin-left: 11px;
+                }
+
+            p{
+                margin: 0;
+                color: #d3d3d3;
+                font-size: 14px;
+            }
+        }
+
+        &__input{
+            border: none;
+            line-height: 170%;
+            font-size: 14px;
+            text-align: right;
+            width: 100%;
+        }
+
+    }
 
     &-menu{
         border-radius: 10px;

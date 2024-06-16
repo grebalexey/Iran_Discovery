@@ -1121,6 +1121,9 @@ body {
   background-color: #E7F2FF;
   padding: 8px 12px;
 }
+.catalog-cards {
+  width: 100%;
+}
 .catalog-card {
   display: flex;
   align-items: center;
@@ -1129,9 +1132,13 @@ body {
   border: 1px solid #E7F2FF;
   overflow: hidden;
   cursor: pointer;
+  margin-left: 20px;
 }
 .catalog-card + .catalog-card {
   margin-top: 32px;
+}
+.catalog-card__content {
+  width: 100%;
 }
 .catalog-card__title {
   font-size: 32px;
@@ -1167,7 +1174,7 @@ body {
   justify-content: space-between;
   padding: 12px 24px;
   background-color: #E7F2FF;
-  width: 100%;
+  margin-top: 10px;
 }
 .catalog-card__price {
   color: #0587D6;
@@ -1355,6 +1362,76 @@ body {
   max-width: 412px;
   position: absolute;
   top: -175px;
+}
+.aside-filters {
+  padding: 30px 16px;
+  border: 2px solid #CEE5FF;
+  border-radius: 10px;
+  margin: 40px 0;
+}
+.aside-filter__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.aside-filter__line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.aside-filter__line-range {
+  display: flex;
+  flex-direction: column;
+}
+.aside-filter__line-range-value {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.aside-filter__line-range-slider {
+  height: 7px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #d3d3d3;
+  position: relative;
+}
+.aside-filter__line-range-slider-progress {
+  height: 7px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #0587D6;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+}
+.aside-filter__line-range-slider-input {
+  position: relative;
+  width: 100%;
+}
+.aside-filter__line-range-slider-input input {
+  direction: rtl;
+  width: 100%;
+}
+.aside-filter__box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #C2C2C2;
+  border-radius: 7px;
+  padding: 3px 10px;
+}
+.aside-filter__box + .aside-filter__box {
+  margin-left: 11px;
+}
+.aside-filter__box p {
+  margin: 0;
+  color: #d3d3d3;
+  font-size: 14px;
+}
+.aside-filter__input {
+  border: none;
+  line-height: 170%;
+  font-size: 14px;
+  text-align: right;
+  width: 100%;
 }
 .aside-menu {
   border-radius: 10px;
